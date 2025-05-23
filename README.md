@@ -10,11 +10,16 @@ This web app scans captured HTTP(S) traffic logs and displays alerts for:
 - 💳 Credit card numbers
 - ⚠️ Insecure HTTP protocols
 
+
 ---
 
 ## 📸 Screenshot
 
 > *(Optional: add a screenshot of the web UI once live)*
+<img width="1440" alt="Screenshot 2025-05-23 at 18 27 26" src="https://github.com/user-attachments/assets/0de56d44-d53b-4531-bbec-1c8b983476fa" />
+<img width="1440" alt="Screenshot 2025-05-23 at 18 37 45" src="https://github.com/user-attachments/assets/dd327152-0b7d-4001-b2c9-16f03e4983f6" />
+
+
 
 ---
 
