@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MobSafe Proxy Web</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        h1 { color: #27ae60; }
+        #alerts { margin-top: 20px; }
+        .alert { background: #fff; padding: 10px; margin-bottom: 10px; border-left: 5px solid #27ae60; }
+    </style>
+</head>
+<body>
+    <h1>🛡 MobSafe Web Analyzer</h1>
+    <p>Click below to analyze current traffic log:</p>
+    <button onclick="fetchAlerts()">Analyze Logs</button>
+    <div id="alerts"></div>
+
+    <script>
+        function fetchAlerts() {
+            fetch('/analyze')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('alerts');
+                    container.innerHTML = '';
+                    if (data.length === 0) {
+                        container.innerHTML = '<p>No alerts found.</p>';
+                    } else {
+                        data.forEach(alert => {
+                            const div = document.createElement('div');
+                            div.className = 'alert';
+                            div.textContent = alert;
+                            container.appendChild(div);
+                        });
+                    }
+                });
+        }
+    </script>
+</body>
+</html>
