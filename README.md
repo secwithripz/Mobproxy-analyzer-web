@@ -1,24 +1,37 @@
+# 🌐 Mobproxy Analyzer Web
 
-# 🌐 Mobproxy-analyzer-web
+A Flask-based real-time traffic log analyzer built for [MobSafeSuite](https://github.com/secwithripz/MobSafeSuite).
 
-A Flask-based web interface for analyzing traffic logs captured by [MobSafe Proxy CLI](https://github.com/secwithripz/MobSafeSuite).
+This web app scans captured HTTP(S) traffic logs and displays alerts for:
 
-This tool reads `logs/traffic.json` and shows real-time alerts for:
-
-- 🔑 Passwords in request bodies
-- 🔐 API key leakage
+- 🔑 Passwords
+- 🛡️ API keys
 - 📧 Email addresses
 - 💳 Credit card numbers
-- ⚠️ Insecure protocols
+- ⚠️ Insecure HTTP protocols
 
 ---
 
-## 📦 Folder Structure
-MobSafeWebApp/
-├── app.py # Flask app
-├── logs/ # Captured traffic logs (from mitmdump)
-├── templates/
-│ └── index.html # Web UI
+## 📸 Screenshot
 
-Built with ❤️ by Rifnas Mohd
+> *(Optional: add a screenshot of the web UI once live)*
 
+---
+
+## ⚙️ Installation & Setup Guide
+
+Follow these steps to install and run Mobproxy Analyzer Web locally.
+
+### 🧰 Requirements
+
+- Python 3.8 or higher
+- pip
+- A terminal (macOS, Linux, or Windows)
+
+---
+
+### 📥 1. Clone the Repository
+
+```bash
+git clone https://github.com/secwithripz/Mobproxy-analyzer-web.git
+cd Mobproxy-analyzer-web
